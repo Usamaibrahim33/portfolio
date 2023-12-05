@@ -20,7 +20,7 @@ function Projects() {
             <div className=' text-white lg:grid grid-cols-3 gap-2'>
            
 
-                  <div className='mt-10 mx-2  bg-cyan-600  shadow-lg border rounded-lg  transform transition-transform  hover:scale-110'>
+                  <div className='mt-10 mx-2  bg-cyan-600  shadow-lg border rounded-lg  transform transition-transform  hover:scale-110 dark:bg-black'>
                           <img  src={firstproject} alt="" />
                           <div className=''>
                               <h1 className='mt-5'> TECHNOLOGY:</h1>
@@ -36,7 +36,7 @@ function Projects() {
                           </div>
                   </div>
           
-                  <div className='mt-10 mx-2  bg-cyan-600  shadow-lg border rounded-lg  transform transition-transform  hover:scale-110 '>
+                  <div className='mt-10 mx-2  bg-cyan-600  shadow-lg border rounded-lg  transform transition-transform  hover:scale-110 dark:bg-black '>
                             <img src={fourthproject} alt="" />
                             <div className=''>
                                 <h1 className='mt-5'> TECHNOLOGY:
@@ -54,7 +54,7 @@ function Projects() {
                   </div>
                   
 
-                  <div className='mt-10 mx-2 bg-cyan-600  shadow-lg border-cyan-600 rounded-lg  transform transition-transform  hover:scale-110'>
+                  <div className='mt-10 mx-2 bg-cyan-600  shadow-lg border-cyan-600 rounded-lg  transform transition-transform  hover:scale-110 dark:bg-black'>
                           <img   src={thirdproject}  alt="" />
                           <div className='mt-5'>
                               <h1  className='mt-5 text-xl'> TECHNOLOGY:  </h1>
@@ -70,7 +70,7 @@ function Projects() {
                           </div>      
                   </div>
 
-                  <div className='mt-10 mx-2 bg-cyan-600  shadow-lg border rounded-lg  transform transition-transform  hover:scale-110'>
+                  <div className='mt-10 mx-2 bg-cyan-600  shadow-lg border rounded-lg  transform transition-transform  hover:scale-110 dark:bg-black'>
                             <img src={secondproject} alt="" />
                             <div className=''>
                               <h1 className='mt-5'> TECHNOLOGY: </h1>
