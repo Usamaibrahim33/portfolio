@@ -1,20 +1,38 @@
 import { useState } from "react"
 
+import { useLocation } from "react-router-dom"
 
-const CONTACTDETAIL = {
-    firstName: '',
-    secondName: '',
-    email: '',
-    textarea: ''
+
+const getContactDetail = () => {
+    const firstName = localStorage.getItem('firstName')
+    const secondName = localStorage.getItem('secondName')
+    const email = localStorage.getItem('email')
+    const textarea = localStorage.getItem('textarea')
+
+    return  {
+        firstName: firstName || '',
+        secondName: secondName || '',
+        email: email || '',
+        textarea: textarea || ''
+    }
+  
+
 }
+
+
+
 function Contact() {
-    const [form, setForm] = useState(CONTACTDETAIL)
+    const [form, setForm] = useState(getContactDetail())
+
+
+    const location = useLocation()
+    const projectRoute = location.pathname !== '/'
 
     
     const postToUsama = () => {
         const options = {
             method: "POST",
-            Header: { "Content-Type" : "application/json"},
+            header: { "Content-Type" : "application/json"},
             body: JSON.stringify(form)         
         }
 
@@ -28,18 +46,25 @@ function Contact() {
         event.preventDefault()
         console.log('you wanna contact me right!', form)
         
+        localStorage.removeItem('firstName');
+        localStorage.removeItem('secondName');
+        localStorage.removeItem('email');
+        localStorage.removeItem('textarea')
+
+        setForm(getContactDetail())
 
     }
 
     const handleChange = (event) => {
         const { name, value} = event.target
         setForm({...form, [name]: value})
-        console.log(name, value)
+        localStorage.setItem(name, value)
+
     }
 
 
     return(
-        <section className='mx-3' >
+        <section className={`mx-3 ${projectRoute ? 'mt-32' : ''} dark:text-white `} >
         <h1 className='text-4xl font-bold text-cyan-500 mt-10 mb-3'> Contact </h1>
         <form onSubmit={handleSubmit} >
         <label htmlFor="firstName">
@@ -63,7 +88,7 @@ function Contact() {
             <textarea className="border-2 w-full border-cyan-600" name="textarea" value={form.textarea} id="textarea" cols="30" rows="10" placeholder="write your message here" onChange={handleChange}></textarea>
         </label>
 
-        <input className='w-full border  cursor-pointer shadow-lg bg-gold-600 bg-cyan-600 text-white rounded-md py-2 mt-40 lg:bg-black ' type="submit" value='Contact Usama' />
+        <input className='w-full border text-1xl hover:scale-110 duration-500 cursor-pointer shadow-lg bg-gold-600 bg-cyan-600 text-white rounded-md py-2 mt-40 lg:bg-black ' type="submit" value='Submit' />
         </form>   
       </section>
     )
