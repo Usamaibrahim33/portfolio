@@ -89,7 +89,7 @@ function Contact() {
             <textarea className="border-2 w-full border-cyan-600" name="textarea" value={form.textarea} id="textarea" cols="30" rows="10" placeholder="write your message here" onChange={handleChange}></textarea>
         </label>
 
-        <input className='w-full border text-1xl hover:scale-110 duration-500 cursor-pointer shadow-lg bg-gold-600 bg-cyan-600 text-white rounded-md py-2 mt-40 lg:bg-black ' type="submit" value='Submit' />
+        <input className='w-full border text-1xl hover:scale-110 duration-500 cursor-pointer shadow-lg bg-gold-600 bg-cyan-600 text-white rounded-md py-2 mt-40 ' type="submit" value='Submit' />
         </form>   
       </section>
     )

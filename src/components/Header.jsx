@@ -67,12 +67,28 @@ function Header({handleDarkMode}) {
                  : <nav className=' py-10  mb-12  flex justify-between fixed top-0 w-full z-10  bg-cyan-600 md:px-20 lg:px-40 rounded-lg  '>
                  <h1 className='text-xl text-black text-center flex  justify-center items-center ml-5 font-bold rounded-full bg-cyan-600 h-10 w-10 border border-white' > U </h1>
                  <div>
-                 <ul className=' hidden lg:flex border-black border rounded-full gap-9 justify-center mt-2 items-center  bg-white '>
+                 <ul className=' hidden lg:flex border-black border rounded-full gap-9 justify-center mt-2 items-center  bg-white  text-black dark:bg-black dark:text-white '>
+                 <Link to='/'>
                        <li className='py-1 font-bold  pl-2'>Home</li>
-                       <li className='font-bold'>About</li>
+                       </Link>
+                      
+
+                      <Link to='/about'>
+                      <li className='font-bold'>About</li>
+                      </Link>
+                       
+
+                       <Link to='/contact'>
                        <li className='font-bold'>Contact</li>
-                       <li className='font-bold'>Service</li>
-                       <li className='pr-2 font-bold'>Projects</li>
+                       </Link>
+                      
+                        <Link to='/service'>
+                        <li className='font-bold'>Service</li>
+                        </Link>
+                       
+                       <Link to='/projects'>
+                       <li className='pr-2 font-bold '>Projects</li>
+                       </Link>
                    </ul>
 
                  </div>

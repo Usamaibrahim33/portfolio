@@ -3,7 +3,7 @@ function AboutMe() {
   const location = useLocation()
   const projectRoute = location.pathname !== '/'
     return(
-        <div className={`mx-3 ${projectRoute ? 'mt-32' : ''} dark:text-white`}>
+        <div className={`mx-3 ${projectRoute ? 'mt-32 mx-44' : ''} dark:text-white`}>
                 {/* <h1 className='text-4xl text-cyan-500 font-bold text-center'> About</h1> */}
                 <h1 className={`text-4xl  text-cyan-500 font-bold ${projectRoute ? 'text-center' : ''}`}>About</h1>
 

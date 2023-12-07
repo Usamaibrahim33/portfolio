@@ -11,6 +11,7 @@ function ServerOffered() {
     return (
 
         <>
+        <div className={`${projectRoute ? 'mx-44' : ''}`}>
         <div className={`mx-5 ${projectRoute ? 'mt-32' : ""} dark:text-white`}>
             <h3 className='text-3xl mt-5n py-1'>Services I Offer</h3>
             <p className='text-md py-2 leading-6 text-gray-80'>
@@ -68,6 +69,7 @@ function ServerOffered() {
                     <p className='text-gray-800'>Swift</p>
                 </div>
 
+        </div>
         </div>
             
         </>

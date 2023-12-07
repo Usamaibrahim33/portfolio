@@ -10,7 +10,7 @@ function Projects() {
   
 
     return (
-        <div id='projects' className={`mx-3 ${projectRoute ? ' mt-32': ''} dark:text-white`}>
+        <div id='projects' className={`mx-3 ${projectRoute ? ' mt-32 mx-44': ''} dark:text-white`}>
            <hr  className='mt-5'/>
             <h1 className='text-4xl font-bold text-cyan-500 mt-5 mb-3 '> Projects</h1>
             <p className='leading-7'>As a dedicated developer, I've embarked on numerous projects, each a testament to my passion for innovation and problem-solving. Using a blend of React, Tailwind CSS, HTML5, and JavaScript, I've crafted versatile applications that showcase my commitment to user-centric design and seamless functionality. Explore a few of my projects below, each a product of creativity, skill, and a fervent pursuit of excellence.</p>
