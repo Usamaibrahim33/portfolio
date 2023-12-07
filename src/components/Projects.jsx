@@ -85,7 +85,8 @@ function Projects() {
                             <div className='py-1 mt-5  bg-white text-black text-center rounded-lg' > 
                                 <a className=' font-bold' href="https://github.com/Usamaibrahim33/Individual-Project/tree/main">View Source Code</a>
                             </div>
-                  </div>
+               </div>
+
           
              </div>
        </div>

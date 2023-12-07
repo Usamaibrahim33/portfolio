@@ -64,10 +64,11 @@ function Contact() {
 
 
     return(
-        <section className={`mx-3 ${projectRoute ? 'mt-32' : ''} dark:text-white `} >
-        <h1 className='text-4xl font-bold text-cyan-500 mt-10 mb-3'> Contact </h1>
+        <section className={`mx-3 ${projectRoute ? 'mt-32' : ''} dark:text-white flex justify-center items-center `} >
+
         <form onSubmit={handleSubmit} >
         <label htmlFor="firstName">
+        <h1 className='text-4xl font-bold text-cyan-500 mt-10 mb-3'> Contact </h1>
           <h1 className=''>First Name</h1>
         <input className=' rounded-lg w-full border-2 border-cyan-600  shadow-lg py-1' type="text" name='firstName' value={form.firstName} required placeholder='whats your first Name'  onChange={handleChange} /> <br />
         </label> <br />
