@@ -17,7 +17,11 @@ function Footer() {
                       <div className='text-left mt-10 ml-3'>
                             <h4 className='text-lg font-bold'>Contact Me</h4>
                             <p className='text-sm'>Email: usamaibrahimusman@gmail.com</p>
-                            <p className='text-sm'>Phone: 07384120031</p>
+                            <p className='text-sm mb-2'>Phone: 07384120031</p>
+                            <p className='text-sm'>
+        <a href="https://bold.pro/my/usama-ibrahim" rel='noopener noreferrer' target="_blank" className=' px-2 rounded-lg bg-white  py-2 text-black transform transition-transform duration-300 hover:scale-105 '>View My CV</a>
+    </p>
+                           
                       </div>
 
                       {/* Social Media Links */}

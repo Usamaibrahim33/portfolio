@@ -1,7 +1,5 @@
 import { useState } from "react"
-
 import { useLocation } from "react-router-dom"
-
 
 const getContactDetail = () => {
     const firstName = localStorage.getItem('firstName')
@@ -15,7 +13,6 @@ const getContactDetail = () => {
         email: email || '',
         textarea: textarea || ''
     }
-  
 
 }
 
@@ -32,26 +29,30 @@ function Contact() {
     const postToUsama = () => {
         const options = {
             method: "POST",
-            header: { "Content-Type" : "application/json"},
+            headers: { "Content-Type" : "application/json"},
             body: JSON.stringify(form)         
         }
 
-        fetch("urltosenddatato", options)
+        console.log('this is inside tyhe postToUsama function',form)
+        fetch("http://localhost:4050/contact", options)
            .then((response) => response.json())
            .then((data) => console.log(data) )
            .catch((error) => console.log(error))
     }
+
     
     const handleSubmit = (event) => {
         event.preventDefault()
         console.log('you wanna contact me right!', form)
-        
+        postToUsama()
+    
         localStorage.removeItem('firstName');
         localStorage.removeItem('secondName');
         localStorage.removeItem('email');
         localStorage.removeItem('textarea')
 
         setForm(getContactDetail())
+
 
     }
 

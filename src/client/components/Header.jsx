@@ -16,7 +16,6 @@ function Header({handleDarkMode}) {
     const closeMenu =() => {
       setMenu(false)
     }
-
     return(
         <>
                  {menu ? <div className=' fixed top-0 z-50 w-screen text-white bg-cyan-600 rounded-lg '>
@@ -89,6 +88,8 @@ function Header({handleDarkMode}) {
                        <Link to='/projects'>
                        <li className='pr-2 font-bold '>Projects</li>
                        </Link>
+
+                       <a href='https://bold.pro/my/usama-ibrahim' target='_blank' rel='noopener noreferrer' className='pr-2 font-bold cursor-pointer'>Resume</a>
                    </ul>
 
                  </div>

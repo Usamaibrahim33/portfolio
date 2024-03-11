@@ -9,7 +9,7 @@ function AboutMe() {
 
                 <h2 className="text-2xl mt-5 text-cyan-500 font-bold "> Introduction </h2>
                 <p className='text-md  leading-7 text-gray-80'> 
-                     Hi there! I'm Usama Ibrahim, a 20-year-old Nigerian currently based in the UK, passionately exploring the realms of cybersecurity and coding. Two years ago, my journey into the world of cybersecurity began, and it's been an exhilarating ride ever since.
+                     Hi there! I'm Usama Ibrahim, a 23-year-old Nigerian currently based in the UK, passionately exploring the realms of cybersecurity and coding. Two years ago, my journey into the world of cybersecurity began, and it's been an exhilarating ride ever since.
                 </p>
 
 
